@@ -8,7 +8,7 @@ from PyGrace.Extensions.latex_string import LatexString, CONVERT
 # this is the step where YOU do the analysis
 import example_tools
 cdf, pdf = example_tools.latexlabels()
-                
+
 class Graph1(CDFGraph):
     def __init__(self, *args, **kwargs):
         CDFGraph.__init__(self, *args, **kwargs)
@@ -39,11 +39,11 @@ mod = (len(CONVERT) / 5) + 1
 for index, (latexString, graceString) in enumerate(sorted(CONVERT.items())):
     x = 0.1 + 0.20 * (index / mod)
     y = 0.895 - 0.0225 * (index % mod)
-    latexString = latexString.replace('\\', r'\\')
-    grace.add_drawing_object(DrawText, text=graceString, x=x, y=y,
-                             char_size=0.6, font=4, just=1)
-    grace.add_drawing_object(DrawText, text=latexString, x=x+0.01, y=y,
-                             char_size=0.6, font=4, just=0)
+#   latexString = latexString.replace('\\', r'\\')
+#   grace.add_drawing_object(DrawText, text=graceString, x=x, y=y,
+#                            char_size=0.6, font=4, just=1)
+#   grace.add_drawing_object(DrawText, text=latexString, x=x+0.01, y=y,
+#                            char_size=0.6, font=4, just=0)
 
 grace.add_drawing_object(DrawLine,
                          start=(0.08, 0.895-0.0225*(mod-1)-0.01),
