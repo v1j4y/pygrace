@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "./07_panels.py", line 1, in <module>
+    from pygrace.templates.Extensions.panel import Panel, MultiPanelGrace
+ImportError: No module named pygrace.templates.Extensions.panel
+
