@@ -1,4 +1,4 @@
 pygrace
 =======
 
-my pygrace examples
+* works nice with spectra plots : Examples/08_...
